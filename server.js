@@ -5,7 +5,7 @@ let express     = require('express'),
     body_parser = require('body-parser'),
     mongoose    = require('mongoose');
 
-app.use(bodyParser.json());
+app.use(body_parser.json());
 app.use(express.static(path.join(__dirname, "static")));
 app.use(session({
     secret: '^P%mUWCwF4hWAhtgUb8BrRqWPuR$%4w^@FSB3j*VfumMEJB8SPpr57%aqRmsEyHGhJKcvgu9#W&5ZvUrCZ*q4c%8^A9RJ49@Mf3X',
